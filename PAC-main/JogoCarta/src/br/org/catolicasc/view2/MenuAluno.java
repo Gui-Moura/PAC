@@ -122,7 +122,7 @@ public class MenuAluno {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Jogo jogo =  new Jogo();
-				jogo.setVisible(true);
+				jogo.frame.setVisible(true);
 				frame.dispose();
 				
 			}
@@ -137,7 +137,7 @@ public class MenuAluno {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Jogo jogo =  new Jogo();
-				jogo.setVisible(true);
+				jogo.frame.setVisible(true);
 				frame.dispose();
 			}
 		});
@@ -151,7 +151,7 @@ public class MenuAluno {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Jogo jogo =  new Jogo();
-				jogo.setVisible(true);
+				jogo.frame.setVisible(true);
 				frame.dispose();
 			}
 		});
@@ -164,7 +164,7 @@ public class MenuAluno {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Jogo jogo =  new Jogo();
-				jogo.setVisible(true);
+				jogo.frame.setVisible(true);
 				frame.dispose();
 			}
 		});
@@ -179,7 +179,7 @@ public class MenuAluno {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Jogo jogo =  new Jogo();
-				jogo.setVisible(true);
+				jogo.frame.setVisible(true);
 				frame.dispose();
 			}
 		});

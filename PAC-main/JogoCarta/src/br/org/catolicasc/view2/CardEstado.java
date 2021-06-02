@@ -7,26 +7,16 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.JDesktopPane;
 
 public class CardEstado {
 
-	private JFrame frame;
+	public JFrame frame;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					CardEstado window = new CardEstado();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	
 
 	/**
 	 * Create the application.
@@ -68,12 +58,12 @@ public class CardEstado {
 		
 		JLabel lblClima = new JLabel("Clima");
 		lblClima.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblClima.setBounds(198, 129, 77, 14);
+		lblClima.setBounds(198, 136, 77, 14);
 		panel.add(lblClima);
 		
 		JLabel lblGovernador = new JLabel("Governador");
 		lblGovernador.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblGovernador.setBounds(198, 166, 77, 14);
+		lblGovernador.setBounds(198, 176, 77, 14);
 		panel.add(lblGovernador);
 		
 		JLabel nomeEstado = new JLabel("ESTADO");
@@ -92,24 +82,23 @@ public class CardEstado {
 		
 		JLabel nomePopulacao = new JLabel("POPULA\u00C7\u00C3O");
 		nomePopulacao.setFont(new Font("Tahoma", Font.BOLD, 12));
-		nomePopulacao.setBounds(198, 114, 77, 14);
+		nomePopulacao.setBounds(198, 111, 77, 14);
 		panel.add(nomePopulacao);
 		
 		nomePopulacao.setText("7 milhões");
 		
 		JLabel nomeClima = new JLabel("CLIMA");
 		nomeClima.setFont(new Font("Tahoma", Font.BOLD, 12));
-		nomeClima.setBounds(198, 141, 77, 14);
+		nomeClima.setBounds(198, 151, 77, 14);
 		panel.add(nomeClima);
 		
 		nomeClima.setText("Subtropical úmido com verões cálidos");
 		
 		JLabel nomeGovernador = new JLabel("GOVERNADOR");
 		nomeGovernador.setFont(new Font("Tahoma", Font.BOLD, 12));
-		nomeGovernador.setBounds(198, 180, 118, 14);
+		nomeGovernador.setBounds(198, 193, 118, 14);
 		panel.add(nomeGovernador);
 		
 		nomeGovernador.setText("Carlos Moisés");
 	}
-	
 }

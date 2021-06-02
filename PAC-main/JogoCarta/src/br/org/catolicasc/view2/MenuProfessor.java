@@ -69,12 +69,27 @@ public class MenuProfessor {
 		panel.add(lblSair);
 		
 		JPanel panel_1 = new JPanel();
+		panel_1.addMouseListener(new MouseAdapter() {
+		
+				
+			}
+		
+		);
 		panel_1.setLayout(null);
 		panel_1.setBackground(Color.ORANGE);
-		panel_1.setBounds(42, 226, 185, 72);
+		panel_1.setBounds(59, 226, 185, 72);
 		frame.getContentPane().add(panel_1);
 		
 		JLabel lblRelatrioDeUso = new JLabel("Relat\u00F3rio de uso e desempenho");
+		lblRelatrioDeUso.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				RelatorioDesempenho relatorioDesempenho = new RelatorioDesempenho();
+					relatorioDesempenho.frame.setVisible(true);
+					frame.dispose();
+				}
+			}
+		);
 		lblRelatrioDeUso.setHorizontalAlignment(SwingConstants.CENTER);
 		lblRelatrioDeUso.setBounds(10, 28, 165, 23);
 		panel_1.add(lblRelatrioDeUso);
@@ -89,6 +104,10 @@ public class MenuProfessor {
 		lblCadastroDeAlunos.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				CadastrarUsuario cadastrarUsuario = new CadastrarUsuario();
+				cadastrarUsuario.frame.setVisible(true);
+				frame.dispose();
+				
 			}
 		});
 		lblCadastroDeAlunos.setHorizontalAlignment(SwingConstants.CENTER);

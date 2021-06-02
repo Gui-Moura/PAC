@@ -16,16 +16,18 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
+import javax.swing.JTable;
 
 
-public class Jogo {
+public class RelatorioDesempenho{
 	
 	public JFrame frame;
+	private JTable table;
 
 	/**
 	 * Create the application.
 	 */
-	public Jogo() {
+	public RelatorioDesempenho() {
 		initialize();
 		
 	}
@@ -74,45 +76,12 @@ public class Jogo {
 		lblSair.setBounds(478, 19, 46, 14);
 		panel_1.add(lblSair);
 		
-		JLabel lblNewLabel = new JLabel("Nivel 1");
-		lblNewLabel.setBounds(96, 136, 46, 14);
+		table = new JTable();
+		table.setBounds(63, 138, 405, 270);
+		frame.getContentPane().add(table);
+		
+		JLabel lblNewLabel = new JLabel("Relatorio de Uso e Desempenho");
+		lblNewLabel.setBounds(174, 89, 192, 14);
 		frame.getContentPane().add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				CardEstado cardEstado = new CardEstado();
-				cardEstado.frame.setVisible(true);
-				
-			}
-		});
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\gui08\\Pictures\\pr.png"));
-		lblNewLabel_1.setBounds(337, 92, 140, 102);
-		frame.getContentPane().add(lblNewLabel_1);
-		
-		JLabel lblNewLabel_2 = new JLabel("New label");
-		lblNewLabel_2.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				CardEstado cardEstado = new CardEstado();
-				cardEstado.frame.setVisible(true);
-			}
-		});
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\gui08\\Pictures\\sc.png"));
-		lblNewLabel_2.setBounds(367, 205, 116, 83);
-		frame.getContentPane().add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				CardEstado cardEstado = new CardEstado();
-				cardEstado.frame.setVisible(true);
-			}
-		});
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\gui08\\Pictures\\rs.png"));
-		lblNewLabel_3.setBounds(252, 270, 175, 165);
-		frame.getContentPane().add(lblNewLabel_3);
 	}
 }
